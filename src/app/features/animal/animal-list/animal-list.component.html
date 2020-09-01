@@ -1,0 +1,25 @@
+<mat-card>
+  <mat-card-title
+    ><h1>{{ cardTitle }}</h1></mat-card-title
+  >
+  <mat-card-content fxLayout="column">
+    <div fxFlexAlign="end">
+      <mat-form-field>
+        <mat-icon matPrefix>search</mat-icon>
+        <input
+          (keyup)="search($event)"
+          class="search-input"
+          matInput
+          placeholder="search here"
+          type="search"
+        />
+      </mat-form-field>
+    </div>
+    <div fxLayout="row wrap" fxLayoutAlign="space-around start">
+      <app-animal-card
+        *ngFor="let animal of filteredAnimals$ | async"
+        [animal]="animal"
+      ></app-animal-card>
+    </div>
+  </mat-card-content>
+</mat-card>

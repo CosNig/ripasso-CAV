@@ -1,0 +1,31 @@
+:host {
+  margin: 10px 10px;
+}
+
+img {
+  height: 200px;
+}
+
+.table-detail {
+  border-spacing: 10px;
+}
+
+.animal-card {
+  max-width: 250px;
+}
+
+.avatar-image {
+  background-size: cover;
+}
+
+.adopted {
+  border: green solid medium;
+  color: green;
+  padding: 5px 15px;
+}
+
+.not-adopted {
+  border: red solid medium;
+  color: red;
+  padding: 5px 15px;
+}

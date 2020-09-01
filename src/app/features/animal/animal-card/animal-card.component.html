@@ -1,0 +1,38 @@
+<mat-card class="animal-card">
+  <mat-card-header>
+    <mat-card-title>{{ animal.name }}</mat-card-title>
+    <mat-card-subtitle>{{ animal.breed }}</mat-card-subtitle>
+  </mat-card-header>
+  <img
+    [src]="animal.imagePath"
+    alt="Photo of a {{ animal.breed }}"
+    mat-card-image
+  />
+  <mat-card-content>
+    <div class="table-details-container">
+      <table class="table-detail">
+        <tr>
+          <td>Name:</td>
+          <td>{{ animal.name }}</td>
+        </tr>
+        <tr>
+          <td>Breed:</td>
+          <td>{{ animal.breed }}</td>
+        </tr>
+        <tr>
+          <td>Age:</td>
+          <td>{{ animal.age }}</td>
+        </tr>
+        <tr>
+          <td [ngClass]="adoptedClass(animal)" colspan="2">
+            {{ adoptedText(animal) }}
+          </td>
+        </tr>
+        <tr>
+          <td>Votes:</td>
+          <td>{{ animal.votes }}</td>
+        </tr>
+      </table>
+    </div>
+  </mat-card-content>
+</mat-card>

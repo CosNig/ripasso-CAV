@@ -1,0 +1,26 @@
+:host {
+  margin: 20px 20px 20px 20px;
+}
+
+mat-card {
+  margin: 0 20px;
+  background-color: whitesmoke;
+}
+
+mat-card h1 {
+  color: #212121;
+  font-size: 180%;
+}
+
+mat-card-title {
+  text-align: center;
+}
+
+mat-form-field {
+  margin: 0 20px;
+  color: #212121;
+}
+
+mat-icon {
+  color: #212121;
+}

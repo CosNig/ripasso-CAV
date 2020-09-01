@@ -1,0 +1,32 @@
+.full-spacer {
+  flex: 1 1 auto;
+}
+
+.avatar-image {
+  height: 32px;
+  margin-right: 20px;
+  display: inline-block;
+}
+
+#user-detail {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.mat-sidenav-container {
+  background-color: white;
+  min-height: 93vh !important;
+}
+
+mat-sidenav {
+  padding: 20px 20px;
+}
+
+mat-sidenav .sidenav-link {
+  display: block;
+  margin-bottom: 20px;
+}
+
+#btn-login {
+  margin-right: 10px;
+}

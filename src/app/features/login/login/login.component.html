@@ -1,0 +1,47 @@
+<div id="login-container">
+  <h1>Login</h1>
+  <div id="login-form">
+    <form>
+      <div fxLayout="column">
+        <mat-form-field class="form-element" fxFlex>
+          <input
+            alt="Username"
+            id="username"
+            matInput
+            name="username"
+            placeholder="Username"
+            type="text"
+            #usernameInput
+          />
+        </mat-form-field>
+        <mat-form-field class="form-element" fxFlex>
+          <input
+            alt="Password"
+            id="password"
+            matInput
+            name="password"
+            placeholder="Password"
+            type="password"
+            #passwordInput
+          />
+        </mat-form-field>
+        <div *ngIf="invalidLogin" id="error">
+          <span>Username or password are invalid!</span>
+        </div>
+        <div fxLayout="row" fxLayoutAlign="center" id="form-actions">
+          <button
+            (click)="login(usernameInput.value, passwordInput.value)"
+            color="primary"
+            id="btn-login"
+            mat-raised-button
+          >
+            Login
+          </button>
+          <button (click)="cancel()" color="warn" mat-raised-button>
+            Cancel
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
